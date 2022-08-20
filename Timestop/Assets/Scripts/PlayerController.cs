@@ -38,11 +38,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.D)){
             rb.velocity = new Vector2(5, rb.velocity.y);
         }
-        
-
-        //Movement:
-        //horizontalMovement = Input.GetAxisRaw("Horizontal");
-        //rb.velocity = new Vector2(horizontalMovement * 5.0f, rb.velocity.y);
 
         //Jumping, with double jump. 
         if (Input.GetKeyDown(KeyCode.Space) && jumpNum <= jumpMax){
@@ -72,7 +67,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void LevelReload(){
+    public void LevelReload(){
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
        
@@ -86,3 +81,8 @@ public class PlayerController : MonoBehaviour
 OTHER SOURCES:
 https://www.codegrepper.com/code-examples/csharp/2d+movement+unity 
 */
+
+//   __O
+//  / /\_               
+// __/\                  
+//    /
