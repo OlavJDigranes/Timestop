@@ -13,6 +13,7 @@ public class Timestop : MonoBehaviour
     public GameObject PlayerPlatfrom;
     public List<float> tsPositionsX = new List<float>();
     public List<float> tsPositionsY = new List<float>();
+    int i = 0;
 
     //bool ts = false; 
 
@@ -44,10 +45,13 @@ public class Timestop : MonoBehaviour
     {
         rb.transform.position = new Vector3(playerPosX, playerPosY, 0); 
 
-        int i = 0;
         GameObject pp = Instantiate(PlayerPlatfrom) as GameObject;
         pp.transform.position = new Vector3(tsPositionsX[i], tsPositionsY[i], 0);
-        i++; 
+        i++;
+
+        Debug.Log(tsPositionsX);
+        Debug.Log(tsPositionsY);
+        Debug.Log(i);
     }
 }
 
