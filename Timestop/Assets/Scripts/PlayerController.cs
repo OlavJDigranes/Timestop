@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rb.transform.position = new Vector3(-6, 0, 0);
         playerHealthCurrent = playerHealthMax; 
     }
 
