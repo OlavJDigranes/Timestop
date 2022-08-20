@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Timestop : MonoBehaviour
 {
+    public Rigidbody2D rb;
     public Transform p1;
-    float playerPosX; 
-    float playerPosY;
+    float playerPosX = -6; 
+    float playerPosY = 0;
     public PlayerController pc;
     public Reloader r;
     public GameObject PlayerPlatfrom;
@@ -20,20 +21,13 @@ public class Timestop : MonoBehaviour
     {
         //if (ts == true) {
         //}
-        for (int i = 0; i < tsPositionsX.Count; i++)
-        {
-            GameObject pp = Instantiate(PlayerPlatfrom) as GameObject;
-            pp.transform.position = new Vector3(tsPositionsX[i], tsPositionsY[i], 0);
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
         //Get current position of player
-        if (Input.GetKey(KeyCode.Return)) {
-            playerPosX = p1.position.x; 
-            playerPosY = p1.position.y;
+        if (Input.GetKeyDown(KeyCode.Return)) {
 
             //r.tsPositionsX.Add(p1.position.x); 
             //r.tsPositionsY.Add(p1.position.y);
@@ -41,8 +35,19 @@ public class Timestop : MonoBehaviour
             tsPositionsX.Add(p1.position.x); 
             tsPositionsY.Add(p1.position.y);
 
-            pc.LevelReload();
+            Reset(); 
+            //pc.LevelReload();
         }
+    }
+
+    public void Reset()
+    {
+        rb.transform.position = new Vector3(playerPosX, playerPosY, 0); 
+
+        int i = 0;
+        GameObject pp = Instantiate(PlayerPlatfrom) as GameObject;
+        pp.transform.position = new Vector3(tsPositionsX[i], tsPositionsY[i], 0);
+        i++; 
     }
 }
 

@@ -370,6 +370,11 @@ MonoBehaviour:
   tsPositionsY: []
   ts: {fileID: 613207670}
   PlayerPlatfrom: {fileID: 4645746695923237299, guid: 110d203a80f59a745adaffbb599ec84f, type: 3}
+--- !u!50 &613207674 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: -75196398927186620, guid: 422b7f192873a6d4ca93006917b5878b, type: 3}
+  m_PrefabInstance: {fileID: 3407282459777632992}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &888743670
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,11 +507,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3407282459316569237, guid: 422b7f192873a6d4ca93006917b5878b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.96
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 3407282459316569237, guid: 422b7f192873a6d4ca93006917b5878b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3407282459316569237, guid: 422b7f192873a6d4ca93006917b5878b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -548,6 +553,10 @@ PrefabInstance:
       propertyPath: p1
       value: 
       objectReference: {fileID: 613207669}
+    - target: {fileID: 4263446264335571400, guid: 422b7f192873a6d4ca93006917b5878b, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 613207674}
     - target: {fileID: 4263446264335571400, guid: 422b7f192873a6d4ca93006917b5878b, type: 3}
       propertyPath: PlayerPlatfrom
       value: 
