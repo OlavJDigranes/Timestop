@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NextLevelDetector : MonoBehaviour
 {
@@ -16,8 +17,10 @@ public class NextLevelDetector : MonoBehaviour
         
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter2D()
     {
-
+        Debug.Log("Arse"); 
+        //Temporary for testing
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 }

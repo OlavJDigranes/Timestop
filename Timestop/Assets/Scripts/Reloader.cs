@@ -14,10 +14,8 @@ public class Reloader : MonoBehaviour
     {
         //Instantiate player timestops on reload. 
         //ts = true; 
-        Debug.Log("fuck");
         for (int i = 0; i < tsPositionsX.Count; i++)
         {
-            Debug.Log("cunt"); 
             
         }
         
