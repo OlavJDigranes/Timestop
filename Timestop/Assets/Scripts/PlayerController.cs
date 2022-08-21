@@ -42,12 +42,16 @@ public class PlayerController : MonoBehaviour
 
         //Jumping, with double jump. 
         if (Input.GetKeyDown(KeyCode.Space) && jumpNum <= jumpMax){
-            rb.velocity = new Vector2(rb.velocity.x, 7.5f);
+            rb.velocity = new Vector2(rb.velocity.x, 5.0f);
             jumpNum ++; 
         }
         else if(jumpNum == jumpMax){
             jumpNum++;
             jump = true;
+        }
+
+        if (rb.transform.position.y <= -10) {
+            LevelReload(); 
         }
     }
 

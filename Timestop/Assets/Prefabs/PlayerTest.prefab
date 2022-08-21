@@ -162,6 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556b9de65ab6e824ca8de899f2d3d09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: -75196398927186620}
   p1: {fileID: 0}
   pc: {fileID: 5162028968040106707}
-  playerPlatfrom: {fileID: 0}
+  r: {fileID: 0}
+  PlayerPlatfrom: {fileID: 4645746695923237299, guid: 110d203a80f59a745adaffbb599ec84f, type: 3}
+  tsPositionsX: []
+  tsPositionsY: []

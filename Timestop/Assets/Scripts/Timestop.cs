@@ -9,7 +9,7 @@ public class Timestop : MonoBehaviour
     float playerPosX = -6; 
     float playerPosY = 0;
     public PlayerController pc;
-    public Reloader r;
+    //public Reloader r;
     public GameObject PlayerPlatfrom;
     public List<float> tsPositionsX = new List<float>();
     public List<float> tsPositionsY = new List<float>();
