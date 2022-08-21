@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
             jump = true;
         }
 
-        if (rb.transform.position.y <= -10) {
+        if (rb.transform.position.y <= -7) {
             LevelReload(); 
         }
     }
