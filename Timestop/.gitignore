@@ -68,6 +68,7 @@ sysinfo.txt
 # Other
 *.log
 /[Ll]ibrary/Artifacts/*
+*.png
 
 # Crashlytics generated file
 crashlytics-build.properties
