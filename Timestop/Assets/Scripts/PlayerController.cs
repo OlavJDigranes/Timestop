@@ -33,11 +33,13 @@ public class PlayerController : MonoBehaviour
         //Move Left
         if (Input.GetKey(KeyCode.A)){
             rb.velocity = new Vector2(-5, rb.velocity.y);
+            GetComponent<SpriteRenderer>().flipX = true;
         }
         
         //Move Right
         if (Input.GetKey(KeyCode.D)){
             rb.velocity = new Vector2(5, rb.velocity.y);
+            GetComponent<SpriteRenderer>().flipX = false;
         }
 
         //Jumping, with double jump. 
