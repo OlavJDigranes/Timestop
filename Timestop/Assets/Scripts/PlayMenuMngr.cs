@@ -32,4 +32,11 @@ public class PlayMenuMngr : MonoBehaviour
 
         //load inbdex from save file/ 
     }
+
+    public void Tutorial()
+    {
+        //Change this to always be the last index
+        //SceneManager.LoadScene(2);
+        Debug.Log("no tutorial yet");
+    }
 }
