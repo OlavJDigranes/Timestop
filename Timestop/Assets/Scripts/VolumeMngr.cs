@@ -12,3 +12,5 @@ public class VolumeMngr : MonoBehaviour
         mixer.SetFloat("Volume", vol); 
     }
 }
+
+//Probably shortest script in this thing. Yay me. 

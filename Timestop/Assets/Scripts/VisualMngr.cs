@@ -12,7 +12,7 @@ public class VisualMngr : MonoBehaviour
 
     void Start()
     {
-        //This makes me annoyed at having to ever use SFML
+        //This makes me annoyed at having to ever use SFML. This is better
         List<string> options = new List<string>(); 
 
         reses = Screen.resolutions;
