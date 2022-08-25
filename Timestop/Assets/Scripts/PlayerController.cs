@@ -35,9 +35,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
-        Debug.Log(rb.velocity);
-
         rb.velocity = new Vector2(inX * 5, rb.velocity.y);
 
         if (inX > 0)
@@ -119,7 +116,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed && jumpNum <= jumpMax)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 3.75f);
+            rb.velocity = new Vector2(rb.velocity.x, 5f);
             jumpNum++;
         }
 
@@ -131,14 +128,6 @@ public class PlayerController : MonoBehaviour
     }       
 }
 
-
-//AUTHOR: Olav Jakobson Digranes, created 28th of October 2021
-//Code largely taken from previous projects, especially GGJ2020
-
-/*
-OTHER SOURCES:
-https://www.codegrepper.com/code-examples/csharp/2d+movement+unity 
-*/
 
 //   __O
 //  / /\_               
