@@ -13,15 +13,17 @@ public class PlayerController : MonoBehaviour
     */
 
     public Rigidbody2D rb;
-    bool jump = false;
+    //bool jump = false;
     int jumpNum = 0;
     int jumpMax = 2;
     public float playerHealthCurrent; 
     public float playerHealthMax = 100.0f; 
     float horizontalMovement;
     private float inX;
+    private float inX2;
     float inHor;
-    bool isFacingRight = true; 
+    bool isFacingRight = true;
+
     
     // Start is called before the first frame update
     void Start()
@@ -33,36 +35,32 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        /*
-         * OLD SYSTEM
-        //Move Left
-        if (Input.GetKey(KeyCode.A)){
-            rb.velocity = new Vector2(-5, rb.velocity.y);
-            GetComponent<SpriteRenderer>().flipX = true;
-        }
         
-        //Move Right
-        if (Input.GetKey(KeyCode.D)){
-            rb.velocity = new Vector2(5, rb.velocity.y);
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-        
-
-        rb.velocity = new Vector2(inX * 5, rb.velocity.y); 
-
-        //Jumping, with double jump. 
-        if (Input.GetKeyDown(KeyCode.Space) && jumpNum <= jumpMax){
-            rb.velocity = new Vector2(rb.velocity.x, 5.0f);
-            jumpNum ++; 
-        }
-
-        else if(jumpNum == jumpMax){
-            jumpNum++;
-            jump = true;
-        }
-        */
+        Debug.Log(rb.velocity);
 
         rb.velocity = new Vector2(inX * 5, rb.velocity.y);
+
+        if (inX > 0)
+        {
+            inX2 = inX;
+        }
+        if (inX < 0)
+        {
+            inX2 = inX;
+        }
+        if (inX == 0)
+        {
+            if (inX2 >= 0)
+            {
+                inX2 -= (Time.deltaTime * 2);
+            }
+            if (inX2 <= 0)
+            {
+                inX2 += (Time.deltaTime * 2);
+            }
+            
+            rb.velocity = new Vector2(inX2 * 5, rb.velocity.y);
+        }
 
         inHor = Input.GetAxisRaw("Horizontal"); 
 
@@ -94,7 +92,7 @@ public class PlayerController : MonoBehaviour
     //Collision Detecter
     void OnCollisionEnter2D(Collision2D col){
         jumpNum = 0; 
-        jump = false;
+        //jump = false;
 
     }
 
@@ -114,21 +112,21 @@ public class PlayerController : MonoBehaviour
 
     public void Movement(InputAction.CallbackContext context)
     {
-        inX = context.ReadValue<Vector2>().x; 
+        inX = context.ReadValue<Vector2>().x;
     }
 
     public void Jumping(InputAction.CallbackContext context)
     {
         if (context.performed && jumpNum <= jumpMax)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 3.5f);
+            rb.velocity = new Vector2(rb.velocity.x, 3.75f);
             jumpNum++;
         }
 
         else if (jumpNum == jumpMax)
         {
             jumpNum++;
-            jump = true;
+            //jump = true;
         }
     }       
 }
