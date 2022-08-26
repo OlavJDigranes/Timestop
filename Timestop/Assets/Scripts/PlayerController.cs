@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     character in the game. 
     */
 
+    private PlayerInput pInput; 
     public Rigidbody2D rb;
     //bool jump = false;
     int jumpNum = 0;
@@ -24,7 +25,33 @@ public class PlayerController : MonoBehaviour
     float inHor;
     bool isFacingRight = true;
 
+<<<<<<< Updated upstream
     
+=======
+    public GameObject PlayerPlatfrom;
+    public List<float> tsPositionsX = new List<float>();
+    public List<float> tsPositionsY = new List<float>();
+    public Transform p1;
+    float playerPosX = -6;
+    float playerPosY = 0;
+    int i = 0;
+
+    private void awake()
+    {
+        pInput = new PlayerInput(); 
+    }
+
+    private void OnEnable()
+    {
+        pInput.Enable();
+    }
+
+    private void OnDisable()
+    {
+        pInput.Disable();
+    }
+
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
