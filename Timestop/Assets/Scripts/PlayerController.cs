@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     character in the game. 
     */
 
+    public PlayerInput pInput; 
     public Rigidbody2D rb;
     //bool jump = false;
     int jumpNum = 0;
@@ -32,6 +33,11 @@ public class PlayerController : MonoBehaviour
     float playerPosY = 0;
     int i = 0;
 
+    private void Awake()
+    {
+        //pInput = new PlayerInput();
+        //pInput = GetComponent<PlayerInput>();
+    }
 
     // Start is called before the first frame update
     void Start()
