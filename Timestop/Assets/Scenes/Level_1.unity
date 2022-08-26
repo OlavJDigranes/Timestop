@@ -825,11 +825,19 @@ MonoBehaviour:
     m_ActionId: c03a11c7-03a3-4d1a-8c6e-536228381cdf
     m_ActionName: Player/Move[/XInputControllerWindows/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: db0abd9f-a420-49fe-af86-b71e9777a0eb
-    m_ActionName: Player/Look[/XInputControllerWindows/rightStick,/Mouse/delta]
-  - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1243555463}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: Placement
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: fe7bcbdc-64f3-4966-99d1-8843fed76432
     m_ActionName: Player/Fire[/XInputControllerWindows/rightTrigger,/Mouse/leftButton]
   - m_PersistentCalls:
@@ -893,6 +901,11 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!4 &1243555472 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7347287448775251974, guid: ede74a672bbaef24dbfc0510a56e3fcb, type: 3}
+  m_PrefabInstance: {fileID: 5386259360484177282}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1280150906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6146381836237286110, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
@@ -1683,6 +1696,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 944880327742592576, guid: ede74a672bbaef24dbfc0510a56e3fcb, type: 3}
+      propertyPath: p1
+      value: 
+      objectReference: {fileID: 1243555472}
+    - target: {fileID: 944880327742592576, guid: ede74a672bbaef24dbfc0510a56e3fcb, type: 3}
+      propertyPath: PlayerPlatfrom
+      value: 
+      objectReference: {fileID: 4645746695923237299, guid: 110d203a80f59a745adaffbb599ec84f, type: 3}
     - target: {fileID: 3768122142728317399, guid: ede74a672bbaef24dbfc0510a56e3fcb, type: 3}
       propertyPath: m_Mass
       value: 5
@@ -1741,6 +1762,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7347287448775251974, guid: ede74a672bbaef24dbfc0510a56e3fcb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8184478204088845659, guid: ede74a672bbaef24dbfc0510a56e3fcb, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

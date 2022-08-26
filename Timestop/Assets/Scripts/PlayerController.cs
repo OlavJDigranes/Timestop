@@ -24,7 +24,15 @@ public class PlayerController : MonoBehaviour
     float inHor;
     bool isFacingRight = true;
 
-    
+    public GameObject PlayerPlatfrom;
+    public List<float> tsPositionsX = new List<float>();
+    public List<float> tsPositionsY = new List<float>();
+    public Transform p1;
+    float playerPosX = -6;
+    float playerPosY = 0;
+    int i = 0;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -125,7 +133,31 @@ public class PlayerController : MonoBehaviour
             jumpNum++;
             //jump = true;
         }
-    }       
+    }
+    
+    public void Placement(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            tsPositionsX.Add(p1.position.x);
+            tsPositionsY.Add(p1.position.y);
+
+            Reset();
+
+            
+        }
+    }
+
+    public void Reset()
+    {
+        rb.transform.position = new Vector3(playerPosX, playerPosY, 0);
+
+        GameObject pp = Instantiate(PlayerPlatfrom) as GameObject;
+        pp.transform.position = new Vector3(tsPositionsX[i], tsPositionsY[i], 0);
+        i++;
+
+        
+    }
 }
 
 
