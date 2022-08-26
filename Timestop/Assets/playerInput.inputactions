@@ -200,34 +200,6 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "Menu",
-            "id": "f3819bfb-d799-461f-9a0c-c5eb1a57e4ba",
-            "actions": [
-                {
-                    "name": "GoBack",
-                    "type": "Button",
-                    "id": "c9887969-d49c-485a-ae01-f608ae8b3a06",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "45fb5335-4c2e-4fc2-8963-8bd5d09dc006",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "GoBack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": [
