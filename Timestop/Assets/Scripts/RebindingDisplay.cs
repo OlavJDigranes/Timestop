@@ -6,6 +6,7 @@ using TMPro;
 
 public class RebindingDisplay : MonoBehaviour
 {
+    /*
     [SerializeField] private InputActionReference jump = null;
     [SerializeField] private InputActionReference move = null;
     [SerializeField] private InputActionReference place = null;

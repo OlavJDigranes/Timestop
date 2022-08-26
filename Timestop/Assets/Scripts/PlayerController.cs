@@ -25,9 +25,6 @@ public class PlayerController : MonoBehaviour
     float inHor;
     bool isFacingRight = true;
 
-<<<<<<< Updated upstream
-    
-=======
     public GameObject PlayerPlatfrom;
     public List<float> tsPositionsX = new List<float>();
     public List<float> tsPositionsY = new List<float>();
@@ -51,7 +48,7 @@ public class PlayerController : MonoBehaviour
         pInput.Disable();
     }
 
->>>>>>> Stashed changes
+
     // Start is called before the first frame update
     void Start()
     {
