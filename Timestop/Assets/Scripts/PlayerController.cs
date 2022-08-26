@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         //pInput = new PlayerInput();
-        pInput = GetComponent<PlayerInput>();
+        //pInput = GetComponent<PlayerInput>();
     }
 
     // Start is called before the first frame update
