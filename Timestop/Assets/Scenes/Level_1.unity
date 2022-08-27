@@ -1065,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6146381836237286110, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.5
+      value: -9.5
       objectReference: {fileID: 0}
     - target: {fileID: 6146381836237286110, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1109,7 +1109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6146381836860027402, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
       propertyPath: m_Size.y
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6146381836860027402, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
       propertyPath: m_Material
@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6146381836860027402, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6146381836860027403, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
       propertyPath: m_Size.x
@@ -1129,7 +1129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6146381836860027403, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
       propertyPath: m_Size.y
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 458938ec62936ee48aace9ab4abcdd4b, type: 3}
