@@ -130,7 +130,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.performed && jumpNum <= jumpMax)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 5f);
+            rb.velocity = new Vector2(rb.velocity.x, 5.2f);
             jumpNum++;
         }
 
