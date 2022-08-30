@@ -24,8 +24,7 @@ public class PlayMenuMngr : MonoBehaviour
     {
         //Change this to always be the last index
         //SceneManager.LoadScene(2);
-        Debug.Log("no tutorial yet");
 
-        SceneManager.LoadScene("Tutorial", LoadSceneMode.Single);
+        SceneManager.LoadScene(2);
     }
 }

@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     {
         
     }
-    */
+    
     // Update is called once per frame
     void Update()
     {
@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
             Application.Quit();
         }
     }
-
+    */
     public void Exit()
     {
         Debug.Log("Yer done cunt"); 
