@@ -22,24 +22,24 @@ public class TutorialUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (p1.transform.position.x <= 1.0f && part1 == false)
+        if (p1.transform.position.x <= -2.0f && part1 == false)
         {
             ted.text = "Move using A for left and D for right";
         }
 
-        if (p1.transform.position.x <= 5.0f && p1.transform.position.x >1.4f && part2 == false)
+        if (p1.transform.position.x <= 4.5f && p1.transform.position.x >= -2.0f && part2 == false)
         {
             ted.text = "Jump using Space";
             part1 = true; 
         }
 
-        if (p1.transform.position.x <= 8.0f && p1.transform.position.x > 5.0f && part3 == false)
+        if (p1.transform.position.x <= 8.0f && p1.transform.position.x > 4.5f && part3 == false)
         {
             ted.text = "Double jump by pressing Space twice";
             part2 = true;
         }
 
-        if (p1.transform.position.x <= 30.0f && p1.transform.position.x > 8.0f && part4 == false)
+        if (p1.transform.position.x <= 30.0f && p1.transform.position.x > 7.0f && part4 == false)
         {
             ted.text = "Place platforms of yourself by jumping or otherwise placing yourself at the desired position and pressing Enter ";
             part3 = true;
