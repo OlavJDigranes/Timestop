@@ -19,6 +19,7 @@ public class TutorialEnd : MonoBehaviour
 
     void OnTriggerEnter2D()
     {
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        //Return to main menu
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }
