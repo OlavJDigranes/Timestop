@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    int levelID; 
+
     //Usie this to display subtitles/level information?
 
     void Start()
