@@ -19,7 +19,11 @@ public class NextLevelDetector : MonoBehaviour
 
     void OnTriggerEnter2D()
     {
-        Debug.Log("Arse"); 
+        //Pseudocode:
+            //When player hits trigger
+                //Save progress to current save file. 
+                //Progress to next level index. 
+
         //Temporary for testing
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }

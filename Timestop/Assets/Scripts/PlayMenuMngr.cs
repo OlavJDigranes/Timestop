@@ -18,6 +18,7 @@ public class PlayMenuMngr : MonoBehaviour
         Debug.Log("Save's nae implemented yet");
 
         //load inbdex from save file/ 
+        //Auto save after every ended level. Multiple save files?
     }
 
     public void Tutorial()
