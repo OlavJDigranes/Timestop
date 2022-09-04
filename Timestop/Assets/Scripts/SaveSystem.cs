@@ -8,12 +8,12 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
+    //This took longer than it should have. I am also an idiot for trying to save a scenemanager and load it ias an int. end me. 
     public static void SaveProgress (int progress){
         BinaryFormatter formatter = new BinaryFormatter(); 
         string path = Application.persistentDataPath + "/progress.fuck";
         FileStream stream = new FileStream(path, FileMode.Create); 
-
-        SaveManager save = new SaveManager(SceneManager.GetActiveScene().buildIndex);
+        int save = SceneManager.GetActiveScene().buildIndex; 
 
         formatter.Serialize(stream, save);
         stream.Close();
@@ -27,7 +27,6 @@ public static class SaveSystem
             FileStream stream = new FileStream(path, FileMode.Open); 
             int progress = System.Convert.ToInt32(formatter.Deserialize(stream));
             stream.Close();
-
             return progress;
         }
         
@@ -38,3 +37,4 @@ public static class SaveSystem
     }
 
 }
+
