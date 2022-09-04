@@ -1679,10 +1679,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'How To play:
-
-    Use versions of yourself to build bridges between platforms
-    that can not be jumped. '
+  m_text: "How To play:\nUse versions of yourself to build bridges between platforms
+    that can not be jumped. \nThe game is saved at the end of each level. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a4667655846d5ce4a9c66d998ae77b9f, type: 2}
   m_sharedMaterial: {fileID: 7726394186145941383, guid: a4667655846d5ce4a9c66d998ae77b9f, type: 2}
