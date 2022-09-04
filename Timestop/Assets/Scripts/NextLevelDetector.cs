@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class NextLevelDetector : MonoBehaviour
 {
+    int levelIndex; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        levelIndex = SceneManager.GetActiveScene().buildIndex; 
     }
 
     // Update is called once per frame
@@ -25,6 +26,11 @@ public class NextLevelDetector : MonoBehaviour
                 //Progress to next level index. 
 
         //Temporary for testing
-        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        Scene scene = SceneManager.GetActiveScene(); 
+        //SceneManager.LoadScene(scene.name);
+        SaveSystem.SaveProgress(SceneManager.GetActiveScene().buildIndex);
+        levelIndex++;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log(SceneManager.GetActiveScene().buildIndex, levelIndex);        
     }
 }
