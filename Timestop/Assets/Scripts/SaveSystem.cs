@@ -32,7 +32,7 @@ public static class SaveSystem
         }
         
         else{
-            Debug.Log("Save no work" + path);
+            Debug.Log("Save nae work" + path);
             return 0; 
         }
     }
