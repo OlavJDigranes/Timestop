@@ -36,5 +36,16 @@ public static class SaveSystem
         }
     }
 
+    public static void NukeSaves(){
+        string path = Application.persistentDataPath + "/progress.fuck";
+        if(File.Exists(path)){
+            File.Delete(path);
+        }
+        else{
+            Debug.Log("File's nuked");
+             
+        }
+    }
+
 }
 
