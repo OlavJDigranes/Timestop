@@ -90,6 +90,8 @@ public class PlayerController : MonoBehaviour
             //rb.transform.localScale = new Vecor3(-1, 1, 1);
             Flipper();
         }
+
+        
     }
 
     void Flipper()
@@ -102,9 +104,11 @@ public class PlayerController : MonoBehaviour
 
     //Collision Detecter
     void OnCollisionEnter2D(Collision2D col){
-        jumpNum = 0; 
-        //jump = false;
-
+        
+        if(col.gameObject.tag != "Wall"){
+            jumpNum = 0;
+        }
+        
     }
 
     private void OnCollisionStay2D(Collision2D col){
@@ -139,6 +143,8 @@ public class PlayerController : MonoBehaviour
             jumpNum++;
             //jump = true;
         }
+
+        Debug.Log(jumpNum); 
     }
     
     public void Placement(InputAction.CallbackContext context)
