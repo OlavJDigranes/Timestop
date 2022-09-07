@@ -105,7 +105,7 @@ public class PlayerController : MonoBehaviour
     //Collision Detecter
     void OnCollisionEnter2D(Collision2D col){
         
-        if(col.gameObject.tag != "Wall"){
+        if(col.gameObject.tag != "Wall" && jumpNum >= 2){
             jumpNum = 0;
         }
         
