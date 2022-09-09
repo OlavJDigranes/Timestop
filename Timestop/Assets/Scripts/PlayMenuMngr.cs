@@ -29,7 +29,7 @@ public class PlayMenuMngr : MonoBehaviour
         //Change this to always be the last index
         //SceneManager.LoadScene(2);
 
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 
     public void LoadMainMenu(){
