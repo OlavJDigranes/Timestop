@@ -144,7 +144,6 @@ public class PlayerController : MonoBehaviour
             //jump = true;
         }
 
-        Debug.Log(jumpNum); 
     }
     
     public void Placement(InputAction.CallbackContext context)
