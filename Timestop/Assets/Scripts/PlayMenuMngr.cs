@@ -8,6 +8,7 @@ public class PlayMenuMngr : MonoBehaviour
 
     public void StartNewGame()
     {
+        SaveSystem.NukeSaves(); 
         SceneManager.LoadScene(1); 
 
         //Need to add wipe of save data. 

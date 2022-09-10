@@ -39,10 +39,11 @@ public static class SaveSystem
     public static void NukeSaves(){
         string path = Application.persistentDataPath + "/progress.fuck";
         if(File.Exists(path)){
+            Debug.Log("Is gone");
             File.Delete(path);
         }
         else{
-            Debug.Log("File's nuked");
+            Debug.Log("File's nuked already");
              
         }
     }
