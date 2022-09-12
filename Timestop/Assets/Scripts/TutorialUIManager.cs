@@ -26,7 +26,7 @@ public class TutorialUIManager : MonoBehaviour
     }
 
     // Update is called once per frame. The text is not chnaged unless all conditions are met. 
-    //As such, the canvas is only repainted five times. 
+    //As such, the canvas is only repainted five times. Thus, optimization of the tutorial is done. 
     void Update()
     {
         if (p1.transform.position.x <= -2.0f && part1 == false && ted.text != info1)
