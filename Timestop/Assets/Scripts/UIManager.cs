@@ -9,8 +9,6 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
 
     public TextMeshProUGUI ted;
-    public TextMeshProUGUI ted2;
-    public Transform p1;
     int levelID; 
 
     //Use this to display level number, and cam number. 
@@ -30,8 +28,6 @@ public class UIManager : MonoBehaviour
             Debug.Log("fuck");
         }
 
-        if(levelID == 77 && p1.transform.position.x >= 86 && ted2.text != "Specimen S539-77 Status: SUCCESS"){
-            ted2.text = "Specimen S539-77 Status: SUCCESS"; 
-        }
+        
     }
 }
