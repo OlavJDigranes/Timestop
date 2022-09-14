@@ -419,6 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ted2: {fileID: 1831324867}
+  panel: {fileID: 767844814}
   p1: {fileID: 1280985112}
 --- !u!1 &496737622
 GameObject:
@@ -750,7 +751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &767844815
 RectTransform:
   m_ObjectHideFlags: 0
