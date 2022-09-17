@@ -44,4 +44,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(0, LoadSceneMode.Single); 
     }
+
+    public void LevelReload(){
+        //Use this for future implementation of a reset button
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        Resume();
+    }
 }

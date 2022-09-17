@@ -28,7 +28,7 @@ public class PlayMenuMngr : MonoBehaviour
     public void Tutorial()
     {
         //Change this to always be the last index
-        SceneManager.LoadScene(14);
+        SceneManager.LoadScene(15);
     }
 
     public void LoadMainMenu(){
