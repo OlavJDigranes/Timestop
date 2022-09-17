@@ -18,8 +18,8 @@ public class PlayMenuMngr : MonoBehaviour
     {
         //Debug.Log("Save's nae implemented yet");
 
-        //load inbdex from save file/ 
-        //Auto save after every ended level. Multiple save files?
+        //load inbdex from binary save file/ 
+        //Auto save after every ended level. 
         int index = SaveSystem.LoadProgress();
         SceneManager.LoadScene(index);
 
@@ -28,8 +28,6 @@ public class PlayMenuMngr : MonoBehaviour
     public void Tutorial()
     {
         //Change this to always be the last index
-        //SceneManager.LoadScene(2);
-
         SceneManager.LoadScene(14);
     }
 
