@@ -30,7 +30,7 @@ public class NextLevelDetector : MonoBehaviour
         //SceneManager.LoadScene(scene.name);
         SaveSystem.SaveProgress(SceneManager.GetActiveScene().buildIndex);
         levelIndex++;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
         Debug.Log(SceneManager.GetActiveScene().buildIndex);
         Debug.Log(levelIndex);
     }

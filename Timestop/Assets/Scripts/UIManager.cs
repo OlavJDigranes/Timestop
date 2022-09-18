@@ -25,9 +25,6 @@ public class UIManager : MonoBehaviour
 
         if(ted.text != "Chamber: " + levelID.ToString()){
             ted.text = "Chamber: " + levelID.ToString();
-            Debug.Log("fuck");
-        }
-
-        
+        }        
     }
 }
