@@ -122,7 +122,8 @@ public class PlayerController : MonoBehaviour
     }
 
     public void LevelReload(){
-        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        //Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
     }
 
     public void Movement(InputAction.CallbackContext context)

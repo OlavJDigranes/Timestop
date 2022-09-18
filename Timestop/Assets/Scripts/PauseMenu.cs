@@ -31,7 +31,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
@@ -47,8 +47,10 @@ public class PauseMenu : MonoBehaviour
 
     public void LevelReload(){
         //Use this for future implementation of a reset button
-        Scene scene = SceneManager.GetActiveScene(); 
-        SceneManager.LoadScene(scene.name);
         Resume();
+        //Scene scene = SceneManager.GetActiveScene(); 
+        //SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+        
     }
 }
