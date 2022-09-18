@@ -47,7 +47,8 @@ public class PauseMenu : MonoBehaviour
 
     public void LevelReload(){
         //Use this for future implementation of a reset button
-        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        Scene scene = SceneManager.GetActiveScene(); 
+        SceneManager.LoadScene(scene.name);
         Resume();
     }
 }
