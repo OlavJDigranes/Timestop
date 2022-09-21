@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &220920042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8262091204006079552, guid: e2c2db6b3124c96458e595d7cc68bf9b, type: 3}
+  m_PrefabInstance: {fileID: 1794334409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &295625367
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +222,7 @@ PrefabInstance:
     - target: {fileID: 4031598416587736131, guid: e2c2db6b3124c96458e595d7cc68bf9b, type: 3}
       propertyPath: pmObj
       value: 
-      objectReference: {fileID: 1794334412}
+      objectReference: {fileID: 220920042}
     - target: {fileID: 4031598416587736131, guid: e2c2db6b3124c96458e595d7cc68bf9b, type: 3}
       propertyPath: canvas
       value: 
@@ -332,14 +337,3 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 5549736568902655629, guid: e2c2db6b3124c96458e595d7cc68bf9b, type: 3}
   m_PrefabInstance: {fileID: 1794334409}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1794334412 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4031598416587736131, guid: e2c2db6b3124c96458e595d7cc68bf9b, type: 3}
-  m_PrefabInstance: {fileID: 1794334409}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09057f7d088156e4e85292f66c70d9cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
