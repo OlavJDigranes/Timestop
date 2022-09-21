@@ -2,16 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems; 
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool isPaused = false;
     public GameObject pauseMenuUI; 
+    public EventSystem eventSys; 
+    public Canvas canvas; 
+
+    //public static PauseMenu pm; 
+
+    void Awake() {
+        int num = FindObjectsOfType<EventSystem>().Length; 
+        Debug.Log(num);
+        if(num == 0){
+            //Destroy(this.eventSys);
+            //Destroy(this.canvas); 
+
+            DontDestroyOnLoad(eventSys); 
+            DontDestroyOnLoad(canvas); 
+        }
+        else{
+            
+        }
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex != 0)
         {
             if (isPaused)
             {

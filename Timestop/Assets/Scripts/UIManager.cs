@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI ted;
     int levelID; 
+    
 
     //Use this to display level number, and cam number. 
 
