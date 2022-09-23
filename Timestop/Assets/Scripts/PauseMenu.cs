@@ -12,7 +12,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI; 
     //public PauseMenu pmObj; 
     public GameObject pmObj; 
-    public EventSystem eventSys; 
+    //public EventSystem eventSys; 
+    public GameObject eventSys; 
     //public Canvas canvas; 
 
     public static PauseMenu pm; 
@@ -24,7 +25,7 @@ public class PauseMenu : MonoBehaviour
         //DontDestroyOnLoad(canvas);
 
         DontDestroyOnLoad(pmObj); 
-           DontDestroyOnLoad(eventSys);
+        DontDestroyOnLoad(eventSys);
         
         //DontDestroyOnLoad(this); 
         
@@ -43,12 +44,18 @@ public class PauseMenu : MonoBehaviour
             DestroyObject(eventSys); 
         }
 
+        int num = FindObjectsOfType<EventSystem>().Length; 
+        Debug.Log(num);
+        if(num == 0){
+            //eventSys.SetActive(false); 
+        }
+
          
         
     }
 
     void OnEnable(){
-        eventSys.SetSelectedGameObject(pauseMenuUI);
+        //eventSys.SetSelectedGameObject(pauseMenuUI);
     }
     
     // Update is called once per frame
@@ -77,7 +84,7 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
-        eventSys.SetSelectedGameObject(pauseMenuUI);
+        //eventSys.SetSelectedGameObject(pauseMenuUI);
         Time.timeScale = 0f;
         isPaused = true; 
     }
