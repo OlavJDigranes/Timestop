@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     PLAYER MOVEMENT CLASS EXPLANATION:
     This class handles the player input to control the movement of the player 
     character in the game. 
+
+    On a side note it's now been a while and I can't be arsed to do these explanations. I know I should, just
+    leave me be
     */
 
     public PlayerInput pInput; 
@@ -33,6 +36,7 @@ public class PlayerController : MonoBehaviour
     float playerPosY = 0;
     int i = 0;
 
+    //Well isn;t this useless
     private void Awake()
     {
         //pInput = new PlayerInput();
@@ -94,6 +98,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    //Flipper, flips direction of sprite. saves on animation. simpls. 
     void Flipper()
     {
         Vector3 currentScale = rb.transform.localScale;
@@ -149,14 +154,14 @@ public class PlayerController : MonoBehaviour
     
     public void Placement(InputAction.CallbackContext context)
     {
+        //Use this to count placements for implementation of difficulty levels. 
         if (context.performed)
         {
             tsPositionsX.Add(p1.position.x);
             tsPositionsY.Add(p1.position.y);
 
             Reset();
-
-            
+ 
         }
     }
 
@@ -172,6 +177,7 @@ public class PlayerController : MonoBehaviour
     }
 }
 
+//Several tutorials were used for this and I lost the links to them. soz. just google it (Specifically Flipper(), Placement() and Reset()).
 
 //   __O
 //  / /\_               
