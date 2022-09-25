@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     int levelID; 
     
 
-    //Use this to display level number, and cam number. 
+    //Use this to display level number, and specimen number. 
 
     void Start()
     {

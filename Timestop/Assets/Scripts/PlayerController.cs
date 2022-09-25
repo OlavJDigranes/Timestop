@@ -177,7 +177,8 @@ public class PlayerController : MonoBehaviour
     }
 }
 
-//Several tutorials were used for this and I lost the links to them. soz. just google it (Specifically Flipper(), Placement() and Reset()).
+//Several tutorials were used for this and I lost the links to them. soz. 
+//just google it (Specifically Flipper(), Placement() and Reset()). ... YT tutorials are grand
 
 //   __O
 //  / /\_               
