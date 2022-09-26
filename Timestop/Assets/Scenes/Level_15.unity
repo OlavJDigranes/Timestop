@@ -6940,6 +6940,10 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 570775956355718245, guid: 7d27f987396f02946aeaffdc05e87f38, type: 3}
+      propertyPath: m_Size.y
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 570775956355718245, guid: 7d27f987396f02946aeaffdc05e87f38, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 18
       objectReference: {fileID: 0}
