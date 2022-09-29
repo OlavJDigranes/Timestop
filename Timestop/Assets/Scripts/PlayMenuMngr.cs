@@ -21,7 +21,8 @@ public class PlayMenuMngr : MonoBehaviour
         //load inbdex from binary save file/ 
         //Auto save after every ended level. 
         int index = SaveSystem.LoadProgress();
-        SceneManager.LoadScene(index);
+        //I think this should work as the save should load onto the first uncompleted scene. 
+        SceneManager.LoadScene(index + 1);
 
     }
 
