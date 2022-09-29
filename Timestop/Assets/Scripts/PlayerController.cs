@@ -154,8 +154,11 @@ public class PlayerController : MonoBehaviour
     
     public void Placement(InputAction.CallbackContext context)
     {
+        Debug.Log(p1.position); 
         //Use this to count placements for implementation of difficulty levels. 
-        if (context.performed)
+        // && p1.position.x < -7.0f && p1.position.x > -5.0f && p1.position.y > 1.0f && p1.position.y < -1.0f
+        // THe box needs more thnking
+        if (context.performed && ((p1.position.x <= -6.5f || p1.position.x >= -5.5f) && (p1.position.y >= 0.5f || p1.position.y <= -0.5f)))
         {
             tsPositionsX.Add(p1.position.x);
             tsPositionsY.Add(p1.position.y);
