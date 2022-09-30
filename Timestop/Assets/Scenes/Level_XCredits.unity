@@ -265,7 +265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Further Credits Here]'
+  m_text: "Art: \n\n\nStory & Script:\nOlav J. Digranes\n\nVoice Over: "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a4667655846d5ce4a9c66d998ae77b9f, type: 2}
   m_sharedMaterial: {fileID: 7726394186145941383, guid: a4667655846d5ce4a9c66d998ae77b9f, type: 2}
