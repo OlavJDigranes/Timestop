@@ -8,10 +8,11 @@ public class PlayMenuMngr : MonoBehaviour
 
     public void StartNewGame()
     {
-        SaveSystem.NukeSaves(); 
-        SceneManager.LoadScene(1); 
+        //Remove PRevious save
+        SaveSystem.NukeSaves();
 
-        //Need to add wipe of save data. 
+        //Start new game 
+        SceneManager.LoadScene(1); 
     }
 
     public void LoadSaveGame()
@@ -33,6 +34,7 @@ public class PlayMenuMngr : MonoBehaviour
     }
 
     public void LoadMainMenu(){
+        //Main menu will always be at index 0
         SceneManager.LoadScene(0);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DevMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //This is just for dev purposes. so that single levels can be tested
     public void Level1(){
         SceneManager.LoadScene(1, LoadSceneMode.Single); 
     }

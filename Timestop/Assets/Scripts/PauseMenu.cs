@@ -11,12 +11,12 @@ public class PauseMenu : MonoBehaviour
     Getting this cunt of a class and game object(s) to work was by far the most annoying thing I've had to do 
     in a while. Jesus fucking christ. ... Anyways, here's wonderwall. 
 
-    Also I would private this code but anyone dumb enough to copy it deservs the hell that awaits them. By now 
+    Also I would private this code on GitHub but anyone dumb enough to copy it deservs the hell that awaits them. By now 
     anyone reading through it must surely be wondering "How the fuck does this work?", and to that I say "Ah 
     dinnae ken"
 
-    Also, I'm sorry to every lecturer I've had that's taugfht me proper formatting and readability of code. I'm
-    nae removing the superfluous comments. I just can't be arsed. 
+    Also, I'm sorry to every lecturer I've had that's taught me proper formatting and readability of code. I'm
+    nae removing the superfluous comments. I just can't be arsed. And I'm not formatting this shite either. 
     */
     public static bool isPaused = false;
     public GameObject pauseMenuUI; 
@@ -64,6 +64,7 @@ public class PauseMenu : MonoBehaviour
         
     }
 
+    //Well this is useless now too. oh well. here it sits. 
     void OnEnable(){
         //eventSys.SetSelectedGameObject(pauseMenuUI);
     }
@@ -116,3 +117,5 @@ public class PauseMenu : MonoBehaviour
         
     }
 }
+
+//This is not optimised. I know. for this it doesn't matter. 

@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        //This is a ruddy mess this. Blimey. 
         rb.velocity = new Vector2(inX * 5, rb.velocity.y);
 
         if (inX > 0)
@@ -157,7 +158,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(p1.position); 
         //Use this to count placements for implementation of difficulty levels. 
         // && p1.position.x < -7.0f && p1.position.x > -5.0f && p1.position.y > 1.0f && p1.position.y < -1.0f
-        // THe box needs more thnking
+        // THe box needs more thnking. Update some hours later it had mre thinking. Turns out logic was needed
         if (context.performed && ((p1.position.x <= -6.5f || p1.position.x >= -5.5f) && (p1.position.y >= 0.5f || p1.position.y <= -0.5f)))
         {
             tsPositionsX.Add(p1.position.x);

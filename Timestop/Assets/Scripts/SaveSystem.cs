@@ -9,9 +9,10 @@ using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveSystem
 {
     //This took longer than it should have. I am also an idiot for trying to save a scenemanager and load it ias an int. end me. 
+    //Writes the progress int to a binary file
     public static void SaveProgress (int progress){
         BinaryFormatter formatter = new BinaryFormatter(); 
-        string path = Application.persistentDataPath + "/progress.fuck";
+        string path = Application.persistentDataPath + "/progress.fuck"; //This is just a binary file. The type is irrelevant. I assumed .fuck would not cause any issues with existing file types. 
         FileStream stream = new FileStream(path, FileMode.Create); 
         int save = SceneManager.GetActiveScene().buildIndex; 
 
@@ -19,6 +20,7 @@ public static class SaveSystem
         stream.Close();
     }
 
+    //Loads progress from binary file
     public static int LoadProgress (){
         string path = Application.persistentDataPath + "/progress.fuck";
         
@@ -36,6 +38,7 @@ public static class SaveSystem
         }
     }
 
+    //Removes save file if it exists
     public static void NukeSaves(){
         string path = Application.persistentDataPath + "/progress.fuck";
         if(File.Exists(path)){

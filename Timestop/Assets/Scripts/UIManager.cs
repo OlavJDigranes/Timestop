@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     int levelID; 
     
 
-    //Use this to display level number, and specimen number. 
+    //Use this to display level number, and specimen number. LEvel updates, speciment is constant
 
     void Start()
     {
