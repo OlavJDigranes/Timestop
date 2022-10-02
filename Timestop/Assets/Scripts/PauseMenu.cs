@@ -85,6 +85,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    //Guess what this does
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -92,6 +93,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
+    //Guess this too, you can win a prize
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
