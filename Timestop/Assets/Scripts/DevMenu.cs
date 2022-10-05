@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DevMenu : MonoBehaviour
 {
-    //This is just for dev purposes. so that single levels can be tested
+    //This is just for dev purposes. so that single levels can be tested. Could this be done in a better way, yes....
     public void Level1(){
         SceneManager.LoadScene(1, LoadSceneMode.Single); 
     }

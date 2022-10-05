@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Timestop : MonoBehaviour
 {
+    //Not quite sure why this is still here...
     public Rigidbody2D rb;
     public Transform p1;
     float playerPosX = -6; 

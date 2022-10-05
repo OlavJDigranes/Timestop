@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro; 
 
+/*
+This class manages the visual settings of the game
+*/
+
+
 public class VisualMngr : MonoBehaviour
 {
     Resolution[] reses;

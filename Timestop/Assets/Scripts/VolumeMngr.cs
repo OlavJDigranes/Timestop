@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
+/*
+This class manages the audio settings for the game. 
+*/
+
 public class VolumeMngr : MonoBehaviour
 {
     public AudioMixer mixer; 
