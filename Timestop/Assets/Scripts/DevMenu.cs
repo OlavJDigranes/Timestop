@@ -102,6 +102,10 @@ public class DevMenu : MonoBehaviour
         SceneManager.LoadScene(24, LoadSceneMode.Single); 
     }
 
+    public void Level25(){
+        SceneManager.LoadScene(25, LoadSceneMode.Single); 
+    }
+
     public void Level77(){
         SceneManager.LoadScene("Level_77", LoadSceneMode.Single); 
     }
