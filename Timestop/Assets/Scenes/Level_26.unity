@@ -2641,10 +2641,10 @@ Transform:
   m_Children:
   - {fileID: 1604252562}
   - {fileID: 1555075862}
+  - {fileID: 1816552699}
   - {fileID: 602142803}
   - {fileID: 822291263}
   - {fileID: 1545336517}
-  - {fileID: 1816552699}
   - {fileID: 1208157570}
   - {fileID: 1280150906}
   - {fileID: 778813235}
@@ -2657,25 +2657,25 @@ Transform:
   - {fileID: 2032225562}
   - {fileID: 1739785209}
   - {fileID: 1493794668}
+  - {fileID: 1269471022}
   - {fileID: 921400283}
+  - {fileID: 1328105592}
+  - {fileID: 366327023}
   - {fileID: 1225853212}
   - {fileID: 971063204}
-  - {fileID: 1700533360}
-  - {fileID: 551263688}
-  - {fileID: 1931103480}
-  - {fileID: 2028429074}
-  - {fileID: 1530936000}
-  - {fileID: 366327023}
-  - {fileID: 1328105592}
-  - {fileID: 1269471022}
   - {fileID: 1793922884}
+  - {fileID: 1700533360}
+  - {fileID: 1130713937}
   - {fileID: 66796480}
   - {fileID: 1158160895}
   - {fileID: 1077689161}
-  - {fileID: 1130713937}
+  - {fileID: 1931103480}
+  - {fileID: 551263688}
   - {fileID: 441159640}
+  - {fileID: 2028429074}
   - {fileID: 1277768467}
   - {fileID: 1628199647}
+  - {fileID: 1530936000}
   m_Father: {fileID: 385605161}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2876,7 +2876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   p1: {fileID: 0}
-  offset: {x: 5, y: 2, z: -30}
+  offset: {x: 0, y: 2, z: -30}
 --- !u!1001 &1931103479
 PrefabInstance:
   m_ObjectHideFlags: 0
